@@ -7,7 +7,7 @@
 \# config file, do not delete !  
 
 \# 考试信息，内容格式符合HTML语法规则，若为中文则需要将中文转换成 Unicode 字符 [( http://tool.chinaz.com/tools/unicode.aspx 中文转Unicode网站 )]   
-\# 格式为 <html><font size = (字体大小，数字) color=(字体颜色，16进制颜色) > 此处为填写的内容 (英文或者Unicode字符) <html>  
+\# 格式为 '<html><font size = (字体大小，数字) color=(字体颜色，16进制颜色) > 此处为填写的内容 (英文或者Unicode字符) <html>'  
 \# 格式不要写错！！！                                                                                                                        
 \# e.g.  
 \# messageLabel.text=<html><font size=8 color=white>\u8DDD2019\u5E74\u4E0A\u534A\u5E74<br>\u7FFB\u8BD1\u8003\u8BD5\u8FD8\u6709<html>  
@@ -46,4 +46,4 @@ test.name=CATTI
   
 ### 关于软件自启
 ![avatar](pic6.png)  
-右键单击 TESTS.exe -> 创建快捷方式 -> 将此快捷方式移动至 C:\Users\Elliot\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 即可实现开机自启
+右键单击 TESTS.exe -> 创建快捷方式 -> 将此快捷方式移动至 C:\Users\你的计算机用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 即可实现开机自启
