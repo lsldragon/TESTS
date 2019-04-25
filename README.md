@@ -30,5 +30,8 @@ test.name=CATTI
 ![avatar](pic2.png)  
 鼠标右键单击界面，可退出程序  
   
-![avatar](pic3.png)  
-点击 x 号，可将软件最小化至系统托盘
+![avatar](pic3.png) ![avatar](pic4.png)  
+点击 x 号，可将软件最小化至系统托盘，系统托盘可显示本次考试名称
+  
+![avatar](pic5.png)  
+鼠标右键系统托盘，可选择相关选项
