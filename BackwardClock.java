@@ -33,113 +33,7 @@ import javax.swing.SwingUtilities;
 
 public class BackwardClock extends JFrame {
 
-	private static Properties prop = new Properties();
-
-	private static String day = "";
-
-	static {
-
-		File file = new File("config.properties");
-		if (!file.exists()) {
-			JOptionPane.showMessageDialog(null, "config.properties file doesn't exits!", "ERROR",
-					JOptionPane.WARNING_MESSAGE);
-			System.exit(0);
-		}
-
-		loadProp();
-
-		day = intToString(differentDays(new Date(), stringToDate(prop.getProperty("test.endDate"))));
-
-	}
-
-	private String dayString = "<html><font size=8 color=#E43A50>" + day + "Ìì<html>";
-
-	private static final long serialVersionUID = 1L;
-
-	private Color backgroundColor = new Color(13, 72, 132);
-	private Color dayColor = new Color(228, 58, 80);
-
-	JPanel backPanel = null;
-	JLabel messageLabel = null;
-
-	JLabel dayLabel = null;
-	JPanel dayPanel = null;
-
-	Font font = new Font("consolas", Font.PLAIN, 16);
-
-	Image iconImage = Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("icon.png"));
-
-	// Constructor function
-	public BackwardClock() {
-		initUI();
-	}
-
-	private static void loadProp() {
-
-		FileInputStream fis;
-		try {
-
-			fis = new FileInputStream("config.properties");
-			prop.load(fis);
-
-		} catch (Exception e) {
-
-			JOptionPane.showMessageDialog(null, e.getMessage(), "ERROE", JOptionPane.WARNING_MESSAGE);
-		}
-
-	}
-
-	private void initUI() {
-
-		backPanel = new JPanel();
-		backPanel.setBackground(backgroundColor);
-
-		messageLabel = new JLabel(prop.getProperty("messageLabel.text"));
-
-		dayPanel = new JPanel();
-		dayLabel = new JLabel(dayString);
-		dayLabel.setForeground(dayColor);
-		dayLabel.setBackground(Color.WHITE);
-		dayPanel.add(dayLabel);
-
-		backPanel.add(messageLabel);
-		backPanel.add(dayPanel, BorderLayout.EAST);
-
-		this.setUndecorated(true);
-		this.setIconImage(iconImage);
-		this.setAlwaysOnTop(true);
-		this.add(backPanel, BorderLayout.CENTER);
-		this.pack();
-		this.setLocationRelativeTo(null);
-		this.addWindowListener(windowAdapter);
-		this.addMouseListener(moveAdapter);
-		this.addMouseMotionListener(moveAdapter);
-	}
-
-	// actions
-	private final Action itemAction = new AbstractAction() {
-
-		private static final long serialVersionUID = 1L;
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-
-			String actionCommand = e.getActionCommand();
-
-			if (actionCommand == "menuItem" || actionCommand == "exitItem") {
-                   This is your code //
-			} else if (actionCommand == "openItem") {
-				if (!isVisible()) {
-					setVisible(true);
-				}
-
-			} else if (actionCommand == "preferenceItem") {
-				This is your code //
-			}
-		}
-	};
-
-	JMenuItem menuItem = new JMenuItem("exit");
+	// omit code 
 
 	private final JPopupMenu jPopupMenu = new JPopupMenu();
 
@@ -153,36 +47,8 @@ public class BackwardClock extends JFrame {
 		jPopupMenu.setLightWeightPopupEnabled(false);
 	}
 
-	private final WindowAdapter windowAdapter = new WindowAdapter() {
-		TrayIcon trayIcon = null;
-
-		@Override
-		public void windowOpened(WindowEvent e) {
-
-			new Thread(new Runnable() {
-
-				@Override
-				public void run() {
-					for (float i = 0.0f; i <= 1.0f; i += 0.2f) {
-						setOpacity(i);
-						try {
-							Thread.sleep(30);
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
-					}
-				}
-			}).start();
-
-		};
 
 		// trayIcon
-		PopupMenu popupMenu = new PopupMenu();
-
-		MenuItem openItem = new MenuItem("Open");
-
-		MenuItem exitItem = new MenuItem("Exit");
-		MenuItem preferenceItem = new MenuItem("Preference");
 
 		@Override
 		public void windowClosing(WindowEvent e) {
@@ -220,25 +86,6 @@ public class BackwardClock extends JFrame {
 				}
 			}
 		}
-
-		private void popMenuUI() {
-
-			openItem.setFont(font);
-			openItem.setActionCommand("openItem");
-			openItem.addActionListener(itemAction);
-
-			exitItem.setFont(font);
-			exitItem.setActionCommand("exitItem");
-			exitItem.addActionListener(itemAction);
-
-			preferenceItem.setFont(font);
-			preferenceItem.setActionCommand("preferenceItem");
-			preferenceItem.addActionListener(itemAction);
-
-			popupMenu.add(openItem);
-			popupMenu.add(preferenceItem);
-			popupMenu.add(exitItem);
-		};
 	};
 
 	// move the frame
@@ -274,26 +121,8 @@ public class BackwardClock extends JFrame {
 	};
 
 	// int To String
-	public static String intToString(int dayInterval) {
-
-		String dateString = String.valueOf(dayInterval);
-		return dateString;
-
-	}
-
+	
 	// String to date
-	public static Date stringToDate(String dateString) {
-
-		Date date = new Date();
-
-		try {
-			date = new SimpleDateFormat("yyyy-MM-dd").parse(dateString);
-		} catch (Exception e) {
-			JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.WARNING_MESSAGE);
-		}
-
-		return date;
-	}
 
 	// calculate days
 	public static int differentDays(Date date1, Date date2) {
@@ -332,9 +161,7 @@ public class BackwardClock extends JFrame {
 
 			@Override
 			public void run() {
-
 				new BackwardClock().setVisible(true);
-
 			}
 		});
 	}
