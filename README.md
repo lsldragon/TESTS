@@ -46,4 +46,4 @@ test.name=CATTI
   
 ### 关于软件自启
 ![avatar](pic6.png)  
-右键单击 TESTS.exe -> 创建快捷方式 -> 将此快捷方式移动至 C:\Users\你的计算机用户名\AppData\Roaming\Microsoft\Windows\Start  即可实现开机自启 Menu\Programs\Startup
+右键单击 TESTS.exe -> 创建快捷方式 -> 将此快捷方式移动至 C:\Users\Elliot\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 即可实现开机自启
