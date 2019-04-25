@@ -1,5 +1,6 @@
 # TESTS
-## 软件操作说明
+由于某些不可描述的原因，仅开源部分非原创代码。😂😂
+## 软件说明
 ### config.properties 文件
 详见config.properties 文件内的说明，以文本方式打开  
 
