@@ -9,8 +9,7 @@
   
 ![avatar](pic1.png)  
 如上图所示，messageLabel.text= 后面填写某次考试的名称(该部分由HTML编写，详见congfig文件说明)，test.endDate= 某次考试的截至日期(注意格式一定是 yyyy-MM-dd,不要有错误！)，test.name= 某次考试的名称(汉字需转换为Unicode字符)  
-注意以上涉及汉字的部分都需将汉字转换成Unicode字符！
-
+注意以上涉及汉字的部分都需将汉字转换成Unicode字符，中文转Unicode网站： http://tool.chinaz.com/tools/unicode.aspx   
 ### 操作说明
 ![avatar](pic2.png)  
 鼠标右键单击界面，可退出程序  
@@ -26,4 +25,4 @@
   
 ### 关于软件自启
 ![avatar](pic6.png)  
-右键单击 TESTS.exe -> 创建快捷方式 -> 将此快捷方式移动至 C:\Users\你的计算机用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 即可实现开机自启
+右键单击 TESTS.exe -> 创建快捷方式(倒数第四个选项) -> 将此快捷方式移动至 C:\Users\你的计算机用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 即可实现开机自启
