@@ -27,3 +27,8 @@ test.name=CATTI
 注意以上涉及汉字的部分都需将汉字转换成Unicode字符！
 
 ### 操作说明
+![avatar](pic2.png)  
+鼠标右键单击界面，可退出程序  
+  
+![avatar](pic3.png)  
+点击 x 号，可将软件最小化至系统托盘
