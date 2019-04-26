@@ -1,4 +1,6 @@
 # TESTS
+![avatar](pic7.png)  
+
 由于某些不可描述的原因，仅开源部分非原创代码。😂😂
 ## 软件说明
 ### config.properties 文件
