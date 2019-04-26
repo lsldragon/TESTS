@@ -2,7 +2,7 @@
 ![avatar](pic7.png)  
 
 由于某些不可描述的原因，仅开源部分非原创代码。😂😂  
-目前版本仅支持Windows，其他系统请下载高级版  
+下载链接：https://github.com/lsldragon/TESTS/releases   目前版本仅支持Windows，其他系统请下载高级版  
 
 ## 软件说明
 ### config.properties 文件
