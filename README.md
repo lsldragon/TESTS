@@ -9,7 +9,7 @@
   
   
 ![avatar](pic1.png)  
-如上图所示，messageLabel.text= 后面填写某次考试的名称(该部分由HTML编写，详见congfig文件说明)，test.endDate= 某次考试的截至日期(注意格式一定是 yyyy-MM-dd,不要有错误！)，test.name= 某次考试的名称(汉字需转换为Unicode字符)  
+config.properties 文件中 messageLabel.text= 后面填写某次考试的名称(该部分由HTML编写，详见congfig文件说明)，test.endDate= 某次考试的截至日期(注意格式一定是 yyyy-MM-dd,不要有错误！)，test.name= 某次考试的名称(汉字需转换为Unicode字符)  
 注意以上涉及汉字的部分都需将汉字转换成Unicode字符，中文转Unicode网站： http://tool.chinaz.com/tools/unicode.aspx   
 ### 操作说明
 ![avatar](pic2.png)  
