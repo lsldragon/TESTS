@@ -1,7 +1,9 @@
 # TESTS
 ![avatar](pic7.png)  
 
-由于某些不可描述的原因，仅开源部分非原创代码。😂😂
+由于某些不可描述的原因，仅开源部分非原创代码。😂😂  
+目前版本仅支持Windows，其他系统请下载高级版  
+
 ## 软件说明
 ### config.properties 文件
 详见config.properties 文件内的说明，以文本方式打开  
