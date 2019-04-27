@@ -18,7 +18,7 @@ config.properties 文件中 messageLabel.text= 后面填写某次考试的名称
 注意以上涉及汉字的部分都需将汉字转换成Unicode字符，中文转Unicode网站： http://tool.chinaz.com/tools/unicode.aspx   
 ### 操作说明
 ![avatar](picn2.png)  
-鼠标右键单击界面，可退出程序  
+鼠标右击界面，可设置是否顶置或退出程序  
   
   
 ![avatar](pic3.png) ![avatar](pic4.png)  
