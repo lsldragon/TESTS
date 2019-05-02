@@ -3,7 +3,7 @@
 
 仅开源部分非原创代码。😂😂  
 下载链接：https://github.com/lsldragon/TESTS/releases  
-目前版本仅支持Windows，其他系统请联系：lsldragon@outlook.com  
+仅提供Windows下载链接，其他系统请联系：lsldragon@outlook.com  
 
 ## 软件说明
 ### config.properties 文件
