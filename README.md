@@ -2,8 +2,8 @@
 ![avatar](pic7.png)  
 
 仅开源部分非原创代码。😂😂  
-下载链接：https://github.com/lsldragon/TESTS/releases , 支持 Windows, linux, mac 
-获取软件高级版请联系：  
+下载链接：https://github.com/lsldragon/TESTS/releases , 支持 Windows, linux, mac   
+获取软件绿色高级完美版请联系：  
 QQ: 1178362914  
 Email:lsldragon@outlook.com  
 
