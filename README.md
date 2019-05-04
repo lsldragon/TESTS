@@ -5,7 +5,7 @@
 下载链接：https://github.com/lsldragon/TESTS/releases  
 仅提供Windows下载链接，其他系统请联系：lsldragon@outlook.com  
 
-## 软件说明
+## 软件说明(因版本不同,操作略有差异)
 ### config.properties 文件
 详见config.properties 文件内的说明，以文本方式打开  
 
