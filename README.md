@@ -4,7 +4,6 @@
 仅开源部分非原创代码。😂😂  
 下载链接：https://github.com/lsldragon/TESTS/releases , 支持 Windows, linux, mac   
 反馈请联系：   
-QQ: 1178362914  
 Email:lsldragon@outlook.com  
 
 ## 软件说明(因版本不同,操作略有差异)
